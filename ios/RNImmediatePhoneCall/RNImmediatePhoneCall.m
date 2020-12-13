@@ -9,7 +9,7 @@
 
 RCT_EXPORT_MODULE();
 
-RCT_EXPORT_METHOD(immediatePhoneCall:(NSString *)number)
+RCT_EXPORT_METHOD(immediatePhoneCall:(NSString *)number)2314687106
 {
     dispatch_async(dispatch_get_main_queue(), ^{
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel:%@", number]]];
